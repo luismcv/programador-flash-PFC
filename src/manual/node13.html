@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Gestión de juegos de comandos</TITLE>
+<META NAME="description" CONTENT="Gestión de juegos de comandos">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+
+</HEAD>
+
+<BODY >
+
+<H2><A NAME="SECTION00052000000000000000">
+Gestión de juegos de comandos</A>
+</H2>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:vent-bd-comandos"></A><A NAME="232"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Ventana de edición de juego de comandos</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><!-- MATH
+ $\resizebox*{0.8\textwidth}{!}{\includegraphics{bd-comandos.ps}}$
+ -->
+<IMG
+ WIDTH="444" HEIGHT="361" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="\resizebox*{0.8\textwidth}{!}{\includegraphics{bd-comandos.ps}}"> </DIV>
+<P>
+<DIV ALIGN="CENTER"></DIV>
+
+<P></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+La mayor parte de las memorias flash que se encuentran en el mercado
+usará uno de los dos juegos de comandos que vienen en la base de datos
+original de este software, etiquetados como ``Comandos AMD'' o
+``Comandos SST'', pero en caso necesario puede crear nuevos juegos
+de comandos o modificar los ya existentes.
+
+<P>
+La parte superior de la pantalla (figura <A HREF="node13.html#fig:vent-bd-comandos"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.png"></A>)
+nos permite crear, copiar y eliminar juegos de comandos, y la inferior
+crear, copiar, eliminar o modificar comandos concretos del juego seleccionado
+en la parte superior.
+
+<P>
+Cada juego de comandos consta de una serie de comandos básicos, necesarios
+para el funcionamiento de la aplicación (y que, por tanto, no se pueden
+eliminar) como son los de lectura (<I>Read</I>), programación (<I>Program</I>),
+borrado (<I>Sector erase</I> y <I>Chip Erase</I>), etc., y una serie
+de comandos extras y opcionales, que son los que se podrán ejecutar
+en la pestaña <I>Comandos</I> de la ventana principal del software.
+Cada uno de estos comandos se compone de una secuencia de pares dirección-dato.
+Las direcciones son valores hexadecimales (aunque también puede introducirlos
+en formato decimal y el programa hará automáticamente la conversión
+a hexadecimal) comprendidos entre 0x00000 y 0x7FFFF y los datos valores
+entre 0x00 y 0xFF. En el comando de borrado de sectores (<I>Sector
+erase</I>) se permite además el uso del parámetro <I>SA</I>, que será
+sustituido por la dirección del sector a borrar durante el envío de
+la secuencia a la memoria. Los cambios realizados serán guardados
+en la base de datos inmediatamente, sin pedirse confirmación.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Luis M. Cruz - Octubre 2003
+</ADDRESS>
+</BODY>
+</HTML>

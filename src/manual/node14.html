@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Gestión de dispositivos</TITLE>
+<META NAME="description" CONTENT="Gestión de dispositivos">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+
+</HEAD>
+
+<BODY >
+
+<H2><A NAME="SECTION00053000000000000000">
+Gestión de dispositivos</A>
+</H2>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:vent-bd-dispositivos"></A><A NAME="234"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Ventana de edición de memorias</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><!-- MATH
+ $\resizebox*{0.8\textwidth}{!}{\includegraphics{bd-dispositivos.ps}}$
+ -->
+<IMG
+ WIDTH="444" HEIGHT="361" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="\resizebox*{0.8\textwidth}{!}{\includegraphics{bd-dispositivos.ps}}"> </DIV>
+<P>
+<DIV ALIGN="CENTER"></DIV>
+
+<P></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+La ventana de la figura <A HREF="node14.html#fig:vent-bd-dispositivos"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.png"></A> nos permite
+añadir, copiar, modificar y eliminar las memorias de la base de datos.
+
+<P>
+De cada memoria se requieren los siguientes datos, que se pueden obtener
+de las especificaciones (<I>datasheet</I>) publicadas por el fabricante:
+
+<P>
+
+<UL>
+<LI>Nombre y código del fabricante.
+</LI>
+<LI>Código identificativo del modelo.
+</LI>
+<LI>Nombre del modelo.
+</LI>
+<LI>Tamaño total de la memoria.
+</LI>
+<LI>Número de pines.
+</LI>
+<LI>Juego de comandos que utiliza.
+</LI>
+<LI>Tipo de programación: programable byte a byte o por páginas o, si
+no es programable a 5V, <I>ROM</I>. Así como los mecanismos de señalización
+de estado de la grabación que soporta: <I>data</I> <I>polling</I>
+(<I>DP-DQ7</I>), <I>toggle bit</I> (<I>TB-DQ6</I>) y/o <I>exceeded
+timing limit</I> (<I>ETL-DQ5</I>).
+</LI>
+<LI>Tamaño de página, si es aplicable.
+</LI>
+<LI>Lista de sectores, si es que está organizada de tal forma. Para añadir
+un sector sitúese sobre la tabla y pulse <I>Insertar</I> o desplacese
+hasta la última fila y pulse el cursor-abajo; aparecerá una nueva
+entrada con los campos vacíos para que los rellene. Si la memoria
+tiene sectores consecutivos del mismo tamaño se recomienda indicar
+el tamaño, la dirección del primer sector y el número de sectores
+consecutivos, en vez de crear una entrada por cada sector. Para eliminar
+una fila sitúese sobre ella y pulse <I>Eliminar</I>, a continuación
+confirme la operación.
+</LI>
+</UL>
+&nbsp;
+
+<P>
+Los cambios realizados en esta pantalla no se harán efectivos hasta
+que pulse en <I>Guardar cambios</I> o conteste afirmativamente a la
+pregunta que se le hace al abandonar la pestaña o el gestor de la
+base de datos.
+<BR><HR>
+<ADDRESS>
+Luis M. Cruz - Octubre 2003
+</ADDRESS>
+</BODY>
+</HTML>

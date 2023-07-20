@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Grabación de una memoria</TITLE>
+<META NAME="description" CONTENT="Grabación de una memoria">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+
+</HEAD>
+
+<BODY >
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html139"
+  HREF="#SECTION00044100000000000000">Grabación de una dirección de memoria</A>
+<LI><A NAME="tex2html140"
+  HREF="#SECTION00044200000000000000">Grabación de un sector</A>
+<LI><A NAME="tex2html141"
+  HREF="#SECTION00044300000000000000">Grabación de un rango de direcciones</A>
+<LI><A NAME="tex2html142"
+  HREF="#SECTION00044400000000000000">Grabación de la memoria completa</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H2><A NAME="SECTION00044000000000000000">
+Grabación de una memoria</A>
+</H2>
+
+<P>
+Antes de grabar una memoria debe comprobar si se trata de una memoria
+programable por páginas o byte a byte (puede obtener esta información
+en la pestaña <I>Dispositivo</I>).
+
+<P>
+Las memorias programables byte a byte requieren que las direcciones
+que van a grabarse estén borradas (es decir, tengan un valor 0xFF<A NAME="tex2html6"
+  HREF="footnode.html#foot93"><SUP>1</SUP></A>). Remítase a la sección <A HREF="node9.html#sec:borrado-memoria"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.png"></A> en caso de necesitar
+borrarla. Tenga en cuenta que la unidad mínima que puede borrar es
+un sector completo, por lo que si sólo desea modificar una posición
+de memoria es posible que necesite leer el sector completo en el que
+se encuentra, modificar el valor en la imagen obtenida, borrar el
+sector y volver a grabarlo en la memoria.
+
+<P>
+En las memorias por páginas, durante la grabación, se realiza automáticamente
+un borrado de la/s página/s que contiene la dirección o direcciones
+a grabar, por lo que no es necesario un borrado previo. Para evitar
+la pérdida de datos del resto de la página al grabar un byte, nuestro
+software realiza internamente una lectura de la página, la modifica
+y la vuelve a grabar completamente, quedando por tanto las direcciones
+no modificadas intactas.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:vent-prog-grab"></A><A NAME="223"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Ventana de grabación de memorias</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><!-- MATH
+ $\resizebox*{0.8\textwidth}{!}{\includegraphics{prog-grab.ps}}$
+ -->
+<IMG
+ WIDTH="444" HEIGHT="354" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="\resizebox*{0.8\textwidth}{!}{\includegraphics{prog-grab.ps}}"> </DIV>
+<P>
+<DIV ALIGN="CENTER"></DIV>
+
+<P></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<H3><A NAME="SECTION00044100000000000000">
+Grabación de una dirección de memoria</A>
+</H3>
+
+<P>
+Seleccione la opción <I>Byte</I> e introduzca en la casilla correspondiente
+la dirección a grabar. Seguidamente introduzca en la casilla <I>Valor</I>
+el dato a grabar. Si desea comprobar que la grabación se realiza correctamente
+marque la casilla <I>Verificar grabación</I>. A continuación pulse
+<I>Grabar.</I>
+
+<P>
+
+<H3><A NAME="SECTION00044200000000000000">
+Grabación de un sector</A>
+</H3>
+
+<P>
+Seleccione la opción <I>Sector</I> y elija en la lista desplegable
+la dirección de comienzo del sector a grabar. Tiene tres opciones:
+
+<P>
+
+<UL>
+<LI>Rellenar el sector con un determinado valor. Marque para ello <I>Valor</I>
+e introduzca el dato a grabar.
+</LI>
+<LI>Rellenar el sector con valores al azar. Marque <I>Valores aleatorios.</I>
+</LI>
+<LI>Guardar en el sector los datos contenidos en un fichero. Marque <I>Fichero</I>
+e introduzca el nombre.
+</LI>
+</UL>
+&nbsp;
+
+<P>
+Si desea comprobar que la grabación se realiza correctamente marque
+la casilla <I>Verificar grabación</I>. A continuación pulse <I>Grabar.</I>
+
+<P>
+
+<H3><A NAME="SECTION00044300000000000000">
+Grabación de un rango de direcciones</A>
+</H3>
+
+<P>
+Seleccione la opción <I>Rango</I> e introduzca la dirección inicial
+y final del rango de direcciones que desea grabar. Tiene tres opciones:
+
+<P>
+
+<UL>
+<LI>Rellenar el rango de direcciones con un determinado valor. Marque
+para ello <I>Valor</I> e introduzca el dato a grabar.
+</LI>
+<LI>Rellenar el rango de direcciones con valores al azar. Marque <I>Valores
+aleatorios.</I>
+</LI>
+<LI>Guardar en el rango de direcciones los datos contenidos en un fichero.
+Marque <I>Fichero</I> e introduzca el nombre.
+</LI>
+</UL>
+&nbsp;
+
+<P>
+Si desea comprobar que la grabación se realiza correctamente marque
+la casilla <I>Verificar grabación</I>. A continuación pulse <I>Grabar.</I>
+
+<P>
+
+<H3><A NAME="SECTION00044400000000000000">
+Grabación de la memoria completa</A>
+</H3>
+
+<P>
+Seleccione la opción <I>Memoria</I>. Tiene tres opciones:
+
+<P>
+
+<UL>
+<LI>Rellenar la memoria con un determinado valor. Marque para ello <I>Valor</I>
+e introduzca el dato a grabar.
+</LI>
+<LI>Rellenar la memoria con valores al azar. Marque <I>Valores aleatorios.</I>
+</LI>
+<LI>Guardar en la memoria los datos contenidos en un fichero. Marque <I>Fichero</I>
+e introduzca el nombre.
+</LI>
+</UL>
+Si desea comprobar que la grabación se realiza correctamente marque
+la casilla <I>Verificar grabación</I>. A continuación pulse <I>Grabar.</I>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Luis M. Cruz - Octubre 2003
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Selección del modelo de memoria</TITLE>
+<META NAME="description" CONTENT="Selección del modelo de memoria">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+
+</HEAD>
+
+<BODY >
+
+<H2><A NAME="SECTION00042000000000000000">
+Selección del modelo de memoria</A>
+</H2>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:vent-prog-disp"></A><A NAME="219"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Ventana de información sobre memorias</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><!-- MATH
+ $\resizebox*{0.8\textwidth}{!}{\includegraphics{prog-disp.ps}}$
+ -->
+<IMG
+ WIDTH="444" HEIGHT="354" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="\resizebox*{0.8\textwidth}{!}{\includegraphics{prog-disp.ps}}"> </DIV>
+<P>
+<DIV ALIGN="CENTER"></DIV>
+
+<P></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+La primera pantalla que nos muestra la aplicación nos permite seleccionar
+el modelo de dispositivo que vamos a leer o grabar. La selección podemos
+hacerla de forma manual eligiendo en las listas desplegables el fabricante
+y modelo o intentando identificar automáticamente la memoria pulsando
+en <I>Autoidentificar</I>. Si la memoria soporta esta función mediante
+alguno de los mecanismos implementados en la aplicación nos devolverá
+un par de códigos que identifican unívocamente al fabricante y modelo;
+si este modelo en concreto se encuentra en la base de datos se nos
+mostrará inmediatamente sus características, igual que si hubiéramos
+seleccionado el dispositivo manualmente.
+
+<P>
+Entre la información que nos muestra tenemos el número de sectores
+en que está organizada la memoria (si no está organizada en sectores
+se nos mostrará un 0), el tipo de memoria (si es programable byte
+a byte, programable por páginas o bien se trata de una memoria de
+sólo lectura o ROM) y el tamaño total. En el caso de que la memoria
+esté organizada en sectores se nos mostrará una lista con el tamaño,
+dirección de comienzo y final de cada uno de los sectores. Pulsando
+en <I>Estado Protec.</I>, y siempre que la memoria soporte esta característica,
+se nos mostrará el estado del sistema de protección de cada uno de
+los sectores.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Luis M. Cruz - Octubre 2003
+</ADDRESS>
+</BODY>
+</HTML>

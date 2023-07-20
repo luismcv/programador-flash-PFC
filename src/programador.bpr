@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="programador.exe"/>
+    <OBJFILES value="programador.obj princ.obj basedatos.obj datamodule.obj flash.obj 
+      nuevodisp.obj ppconf.obj pport.obj acerca_de.obj"/>
+    <RESFILES value="programador.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) princ.dfm basedatos.dfm datamodule.dfm nuevodisp.dfm 
+      ppconf.dfm pport.dfm acerca_de.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="VCLBDE50.lib Vcldb50.lib DLPortIO.lib Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib DLPortIO.lib Vcldb50.lib VCLBDE50.lib"/>
+    <PACKAGES value="DLPortIO.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="programador.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;dlportio\cbuilder\cbuilder.4"/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib;dlportio\cbuilder\cbuilder.4"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl -Idlportio\cbuilder\cbuilder.4 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=3082
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=7
+Item0=$(BCB)\include;$(BCB)\include\vcl;dlportio\cbuilder\cbuilder.4
+Item1=$(BCB)\include;$(BCB)\include\vcl;G:\Archivos de programa\Borland\CBuilder5\Projects\dlportio\cbuilder\cbuilder.4\;dlportio\cbuilder\cbuilder.4
+Item2=G:\Proyectos\programador\;$(BCB)\include;$(BCB)\include\vcl;dlportio\cbuilder\cbuilder.4;G:\Proyectos\programador\dlportio\cbuilder\cbuilder.4
+Item3=G:\Proyectos\programador\;$(BCB)\include;$(BCB)\include\vcl;dlportio\cbuilder\cbuilder.4
+Item4=G:\Proyectos\programador\;$(BCB)\include;$(BCB)\include\vcl;.\dlportio\cbuilder\cbuilder.4
+Item5=G:\Proyectos\programador;$(BCB)\include;$(BCB)\include\vcl;dlportio\cbuilder\cbuilder.4
+Item6=G:\Proyectos\programador;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=8
+Item0=$(BCB)\lib\obj;$(BCB)\lib;dlportio\cbuilder\cbuilder.4
+Item1=$(BCB)\lib\obj;$(BCB)\lib;G:\Archivos de programa\Borland\CBuilder5\Projects\dlportio\cbuilder\cbuilder.4\;dlportio\cbuilder\cbuilder.4
+Item2=$(BCB)\lib\obj;$(BCB)\lib;G:\Archivos de programa\Borland\CBuilder5\Projects\dlportio\cbuilder\cbuilder.4\;.\dlportio\cbuilder\cbuilder.4
+Item3=$(BCB)\lib\obj;$(BCB)\lib;G:\Archivos de programa\Borland\CBuilder5\Projects\dlportio\cbuilder\cbuilder.4\
+Item4=G:\Proyectos\programador\;$(BCB)\lib\obj;$(BCB)\lib;dlportio\cbuilder\cbuilder.4
+Item5=G:\Proyectos\programador\;$(BCB)\lib\obj;$(BCB)\lib;.\dlportio\cbuilder\cbuilder.4
+Item6=G:\Proyectos\programador;$(BCB)\lib\obj;$(BCB)\lib;dlportio\cbuilder\cbuilder.4
+Item7=G:\Proyectos\programador;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
